@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ficon {
+  filter: grayscale(100%) brightness(75%);
+}
+.transition-opacity {
+  transition: object-position 3s ease 0s;
+  position: relative;
+  pointer-events: auto;
+}
+@layer components {
+  .btn {
+    @apply p-3 pl-4 pr-4 text-center rounded-md shadow-lg text-2xl font-poppins font-bold text-white bg-lightPurple hover:opacity-70;
+  }
+  .linkBtn {
+    @apply px-3 py-2 text-center rounded-md shadow-lg text-sm font-light tracking-widest font-poppins text-white bg-lightPurple hover:opacity-70;
+  }
+  .formContainer {
+    @apply flex flex-col space-y-2 p-6 font-poppins text-lightPurple md:p-9;
+  }
+  .inputBtn {
+    @apply text-xl border-b-[0.5px] focus:border-lightPurple placeholder:opacity-20 placeholder:font-medium focus:border-b-2 focus:outline-none;
+  }
+}
